@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099791DD312AA6A0AB484411 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D2F4C68E16BF1018D0DF15 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E7B3BB761B85F1AF00440FFB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E7B3BB751B85F1AF00440FFB /* Podfile */; };
+		E7B3BB781B861F9500440FFB /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = E7B3BB771B861F9500440FFB /* example.geojson */; };
 		E7EBC8921B85DA1D00064B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EBC8911B85DA1D00064B67 /* main.m */; };
 		E7EBC8951B85DA1D00064B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EBC8941B85DA1D00064B67 /* AppDelegate.m */; };
 		E7EBC8981B85DA1D00064B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EBC8971B85DA1D00064B67 /* ViewController.m */; };
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A53C62B6F467ACBB71FC722 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C3EB02360BDB45C10F11A051 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E7B3BB751B85F1AF00440FFB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		E7B3BB771B861F9500440FFB /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
 		E7EBC88C1B85DA1D00064B67 /* YH_MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YH_MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EBC8901B85DA1D00064B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7EBC8911B85DA1D00064B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		E7EBC8A51B85DA1D00064B67 /* YH_MapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YH_MapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EBC8AA1B85DA1D00064B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7EBC8AB1B85DA1D00064B67 /* YH_MapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YH_MapDemoTests.m; sourceTree = "<group>"; };
+		F5D2F4C68E16BF1018D0DF15 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099791DD312AA6A0AB484411 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BFD3F9D8BA935F3511AF3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2F4C68E16BF1018D0DF15 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98F607300DBB33A17F40F6A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A53C62B6F467ACBB71FC722 /* Pods.debug.xcconfig */,
+				C3EB02360BDB45C10F11A051 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7EBC8831B85DA1D00064B67 = {
 			isa = PBXGroup;
 			children = (
 				E7EBC88E1B85DA1D00064B67 /* YH_MapDemo */,
 				E7EBC8A81B85DA1D00064B67 /* YH_MapDemoTests */,
 				E7EBC88D1B85DA1D00064B67 /* Products */,
+				98F607300DBB33A17F40F6A1 /* Pods */,
+				6BFD3F9D8BA935F3511AF3BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +124,8 @@
 		E7EBC88F1B85DA1D00064B67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E7B3BB771B861F9500440FFB /* example.geojson */,
+				E7B3BB751B85F1AF00440FFB /* Podfile */,
 				E7EBC8901B85DA1D00064B67 /* Info.plist */,
 				E7EBC8911B85DA1D00064B67 /* main.m */,
 			);
@@ -126,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7EBC8AF1B85DA1D00064B67 /* Build configuration list for PBXNativeTarget "YH_MapDemo" */;
 			buildPhases = (
+				33ED865BA5B114F2A5F10CA3 /* Check Pods Manifest.lock */,
 				E7EBC8881B85DA1D00064B67 /* Sources */,
 				E7EBC8891B85DA1D00064B67 /* Frameworks */,
 				E7EBC88A1B85DA1D00064B67 /* Resources */,
+				B89581F5FFD58A5A3E0EC027 /* Embed Pods Frameworks */,
+				3FCD423BD877C1ED55C0791E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +234,8 @@
 			files = (
 				E7EBC89B1B85DA1D00064B67 /* Main.storyboard in Resources */,
 				E7EBC8A01B85DA1D00064B67 /* LaunchScreen.xib in Resources */,
+				E7B3BB781B861F9500440FFB /* example.geojson in Resources */,
+				E7B3BB761B85F1AF00440FFB /* Podfile in Resources */,
 				E7EBC89D1B85DA1D00064B67 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +248,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33ED865BA5B114F2A5F10CA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FCD423BD877C1ED55C0791E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89581F5FFD58A5A3E0EC027 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7EBC8881B85DA1D00064B67 /* Sources */ = {
@@ -345,6 +428,7 @@
 		};
 		E7EBC8B01B85DA1D00064B67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A53C62B6F467ACBB71FC722 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YH_MapDemo/Info.plist;
@@ -355,6 +439,7 @@
 		};
 		E7EBC8B11B85DA1D00064B67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EB02360BDB45C10F11A051 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YH_MapDemo/Info.plist;
@@ -416,6 +501,7 @@
 				E7EBC8B11B85DA1D00064B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7EBC8B21B85DA1D00064B67 /* Build configuration list for PBXNativeTarget "YH_MapDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +510,7 @@
 				E7EBC8B41B85DA1D00064B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
